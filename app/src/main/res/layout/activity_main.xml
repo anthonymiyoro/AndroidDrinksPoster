@@ -15,7 +15,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="81dp"
-        android:layout_marginStart="81dp" />
+        android:layout_marginStart="81dp"
+        android:textSize="30dp"
+        android:textIsSelectable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,7 +39,13 @@
         android:layout_alignLeft="@+id/logIn"
         android:layout_alignStart="@+id/logIn"
         android:background="#ff1620ff"
-        android:textColor="#ffeffff3" />
+        android:textColor="#ffeffff3"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:onClick="@string/abc_searchview_description_query"
+        android:layout_alignRight="@+id/drinksPoster"
+        android:layout_alignEnd="@+id/drinksPoster"
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -49,7 +57,12 @@
         android:layout_alignLeft="@+id/facebook"
         android:layout_alignStart="@+id/facebook"
         android:textColor="#ffffffff"
-        android:background="#ffff0d12" />
+        android:background="#ffff0d12"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:layout_alignRight="@+id/facebook"
+        android:layout_alignEnd="@+id/facebook"
+        android:textSize="20dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
