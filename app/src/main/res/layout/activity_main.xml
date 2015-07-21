@@ -16,4 +16,51 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="81dp"
         android:layout_marginStart="81dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Log In"
+        android:id="@+id/logIn"
+        android:layout_below="@+id/drinksPoster"
+        android:layout_alignLeft="@+id/drinksPoster"
+        android:layout_alignStart="@+id/drinksPoster"
+        android:layout_marginTop="152dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:id="@+id/facebook"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/logIn"
+        android:layout_alignStart="@+id/logIn"
+        android:background="#ff1620ff"
+        android:textColor="#ffeffff3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:id="@+id/google"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/facebook"
+        android:layout_alignLeft="@+id/facebook"
+        android:layout_alignStart="@+id/facebook"
+        android:textColor="#ffffffff"
+        android:background="#ffff0d12" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/signUp"
+        android:layout_below="@+id/google"
+        android:layout_alignLeft="@+id/google"
+        android:layout_alignStart="@+id/google"
+        android:layout_marginTop="39dp"
+        android:background="#ffffffff"
+        android:textColor="#ff1253ff" />
 </RelativeLayout>
