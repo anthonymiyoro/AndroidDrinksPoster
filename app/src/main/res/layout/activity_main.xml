@@ -17,7 +17,8 @@
         android:layout_marginLeft="81dp"
         android:layout_marginStart="81dp"
         android:textSize="30dp"
-        android:textIsSelectable="true" />
+        android:textIsSelectable="true"
+        android:theme="@style/Animation.AppCompat.DropDownUp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,12 +29,13 @@
         android:layout_below="@+id/drinksPoster"
         android:layout_alignLeft="@+id/drinksPoster"
         android:layout_alignStart="@+id/drinksPoster"
-        android:layout_marginTop="152dp" />
+        android:layout_marginTop="152dp"
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Facebook"
+        android:text="facebook"
         android:id="@+id/facebook"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/logIn"
@@ -75,5 +77,7 @@
         android:layout_alignStart="@+id/google"
         android:layout_marginTop="39dp"
         android:background="#ffffffff"
-        android:textColor="#ff1253ff" />
+        android:textColor="#ff1253ff"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp" />
 </RelativeLayout>
