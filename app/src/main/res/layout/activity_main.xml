@@ -19,7 +19,8 @@
         android:layout_marginStart="81dp"
         android:textSize="30dp"
         android:textIsSelectable="true"
-        android:theme="@style/Animation.AppCompat.DropDownUp" />
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:textColor="#fffefefe" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,7 +32,8 @@
         android:layout_alignLeft="@+id/drinksPoster"
         android:layout_alignStart="@+id/drinksPoster"
         android:layout_marginTop="152dp"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textColor="#ff000000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -39,16 +41,16 @@
         android:text="facebook"
         android:id="@+id/facebook"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/logIn"
-        android:layout_alignStart="@+id/logIn"
         android:background="#ff1620ff"
         android:textColor="#ffeffff3"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:onClick="@string/abc_searchview_description_query"
-        android:layout_alignRight="@+id/drinksPoster"
-        android:layout_alignEnd="@+id/drinksPoster"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -73,12 +75,12 @@
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:id="@+id/signUp"
-        android:layout_below="@+id/google"
-        android:layout_alignLeft="@+id/google"
-        android:layout_alignStart="@+id/google"
-        android:layout_marginTop="39dp"
-        android:background="#ffffffff"
+        android:background="#ff737373"
         android:textColor="#ff1253ff"
         android:paddingStart="5dp"
-        android:paddingEnd="5dp" />
+        android:paddingEnd="5dp"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/logIn"
+        android:layout_toEndOf="@+id/logIn" />
 </RelativeLayout>
