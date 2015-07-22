@@ -82,5 +82,6 @@
         android:layout_marginBottom="39dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/logIn"
-        android:layout_toEndOf="@+id/logIn" />
+        android:layout_toEndOf="@+id/logIn"
+        android:onClick="jumpToPage"/>
 </RelativeLayout>
