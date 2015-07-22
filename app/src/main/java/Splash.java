@@ -17,8 +17,7 @@ public class Splash extends Activity {
         setContentView(R.layout.splash);
         SurfaceView v = (SurfaceView) findViewById(R.id.surfaceView1);
 
-        GifRun w = GifRun();
-        w.LoadGiff(v,this,R.drawable.giphy);
+        GifRun w = new GifRun();
+            w.LoadGiff(v, this, R.drawable.giphy);
+        }
     }
-
-}
