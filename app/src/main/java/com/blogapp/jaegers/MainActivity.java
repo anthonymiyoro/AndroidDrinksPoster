@@ -17,13 +17,16 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // listens for a click and creates new function called listnr
         OnClickListener listnr = new OnClickListener() {
             @Override
+        //Runs whatever is in the one class
             public void onClick(View v) {
                 Intent i = new Intent("One");
                 startActivity(i);
             }
         };
+        //Assignes the signup button to the listnr function
             Button btn = (Button) findViewById(R.id.signUp);
             btn.setOnClickListener(listnr);
 
