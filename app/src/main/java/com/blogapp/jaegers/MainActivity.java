@@ -6,6 +6,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 ;
 
 
@@ -16,15 +18,16 @@ public class MainActivity extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+OnClickListener listnr
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+     public void onClick(View v){
+        Intent i= new Intent("One");
+        startActivity(i);
     }
 
-    public void jumpToPage(View view) {
-        mViewPager.setCurrentItem(1);
+Button btn =(Button) findViewById(R.id.signUp);
+        btn.setOnClickListener(listnr);
+        }
     }
 
 }
