@@ -18,7 +18,8 @@ public class MainActivity extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-OnClickListener listnr
+OnClickListener listnr =new OnClickListener() {
+
     @Override
      public void onClick(View v){
         Intent i= new Intent("One");
@@ -27,10 +28,10 @@ OnClickListener listnr
 
 Button btn =(Button) findViewById(R.id.signUp);
         btn.setOnClickListener(listnr);
-        }
-    }
 
+    }
 }
+
 
 
 
