@@ -11,27 +11,25 @@ import android.widget.Button;
 ;
 
 
-public class MainActivity extends Activity  {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-OnClickListener listnr =new OnClickListener() {
+        OnClickListener listnr = new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent("One");
+                startActivity(i);
+            }
+        };
+            Button btn = (Button) findViewById(R.id.signUp);
+            btn.setOnClickListener(listnr);
 
-    @Override
-     public void onClick(View v){
-        Intent i= new Intent("One");
-        startActivity(i);
-    }
-
-Button btn =(Button) findViewById(R.id.signUp);
-        btn.setOnClickListener(listnr);
-
+        }
     }
 }
-
 
 
 
